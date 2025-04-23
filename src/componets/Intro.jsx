@@ -1,10 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import cats from "../assets/introImg/cats.png";
 import dogs from "../assets/introImg/dogs.png";
 import birds from "../assets/introImg/birds.png";
 import fishes from "../assets/introImg/fishes.png";
 
-export const Intro = () => {
+export default function Intro() {
+  const navigate = useNavigate();
+
+  const handleCardClick = (path) => {
+    navigate(path);
+  };
   return (
     <>
       <div className="w-full h-[551px] flex flex-col items-center mt-[164px] justify-center">
@@ -16,7 +22,10 @@ export const Intro = () => {
         <div className="w-[1000px] flex flex-col justify-between h-[320px] mt-[50px]">
           <h1 className="text-[23px] ml-[30px] font-medium">Выбери питомца</h1>
           <div className="flex justify-around text-white text-[40px] font-semibold">
-            <div className="relative w-48 h-64 rounded-xl overflow-hidden">
+            <div
+              className="relative w-48 h-64 rounded-xl overflow-hidden"
+              onClick={() => handleCardClick("/cats")}
+            >
               <img
                 src={cats}
                 alt="catsImg"
@@ -24,7 +33,10 @@ export const Intro = () => {
               />
               <h2 className="absolute bottom-4 left-4">Кошки</h2>
             </div>
-            <div className="relative w-48 h-64 rounded-xl overflow-hidden">
+            <div
+              className="relative w-48 h-64 rounded-xl overflow-hidden"
+              onClick={() => handleCardClick("/dogs")}
+            >
               <img
                 src={dogs}
                 alt="dogsImg"
@@ -32,7 +44,10 @@ export const Intro = () => {
               />
               <h2 className="absolute bottom-4 left-4">Собачки</h2>
             </div>
-            <div className="relative w-48 h-64 rounded-xl overflow-hidden">
+            <div
+              className="relative w-48 h-64 rounded-xl overflow-hidden"
+              onClick={() => handleCardClick("/birds")}
+            >
               <img
                 src={birds}
                 alt="birdsImg"
@@ -40,7 +55,10 @@ export const Intro = () => {
               />
               <h2 className="absolute bottom-4 left-4">Птички</h2>
             </div>
-            <div className="relative w-48 h-64 rounded-xl overflow-hidden">
+            <div
+              className="relative w-48 h-64 rounded-xl overflow-hidden"
+              onClick={() => handleCardClick("/fishes")}
+            >
               <img
                 src={fishes}
                 alt="fishesImg"
@@ -53,4 +71,4 @@ export const Intro = () => {
       </div>
     </>
   );
-};
+}
