@@ -1,3 +1,4 @@
+import { Main } from "./componets/main/Main"
 
 
 function App() {
@@ -5,7 +6,7 @@ function App() {
 
   return (
     <>
-
+     <Main/>
     </>
   )
 }
