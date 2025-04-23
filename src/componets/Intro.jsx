@@ -10,21 +10,19 @@ export const Intro = () => {
       <div className="w-full h-[551px] flex flex-col items-center mt-[164px] justify-center">
         <input
           type="text"
-          placeholder="Search"
+          placeholder="Поиск"
           class="w-[452px] h-[62px] px-4 py-2 rounded-full border border-black text-gray-500 outline-none placeholder-gray-500 placeholder:text-[30px] placeholder: pl-[70px] placeholder: pt-[16px]"
         />
         <div className="w-[1000px] flex flex-col justify-between h-[320px] mt-[50px]">
-          <h1 className="text-[23px] ml-[30px] font-medium">Select your pet</h1>
-          <div className="flex justify-around text-white">
+          <h1 className="text-[23px] ml-[30px] font-medium">Выбери питомца</h1>
+          <div className="flex justify-around text-white text-[40px] font-semibold">
             <div className="relative w-48 h-64 rounded-xl overflow-hidden">
               <img
                 src={cats}
                 alt="catsImg"
                 className="rounded-4xl object-cover w-full h-full"
               />
-              <h2 className="absolute bottom-4 left-4 text-white text-[48px] font-semibold">
-                Cats
-              </h2>
+              <h2 className="absolute bottom-4 left-4">Кошки</h2>
             </div>
             <div className="relative w-48 h-64 rounded-xl overflow-hidden">
               <img
@@ -32,9 +30,7 @@ export const Intro = () => {
                 alt="dogsImg"
                 className="rounded-4xl rounded-4xl object-cover w-full h-full"
               />
-              <h2 className="absolute bottom-4 left-4 text-white text-[48px] font-semibold">
-                Dogs
-              </h2>
+              <h2 className="absolute bottom-4 left-4">Собачки</h2>
             </div>
             <div className="relative w-48 h-64 rounded-xl overflow-hidden">
               <img
@@ -42,9 +38,7 @@ export const Intro = () => {
                 alt="birdsImg"
                 className="rounded-4xl object-cover w-full h-full"
               />
-              <h2 className="absolute bottom-4 left-4 text-white text-[48px] font-semibold">
-                Birds
-              </h2>
+              <h2 className="absolute bottom-4 left-4">Птички</h2>
             </div>
             <div className="relative w-48 h-64 rounded-xl overflow-hidden">
               <img
@@ -52,9 +46,7 @@ export const Intro = () => {
                 alt="fishesImg"
                 className="rounded-4xl object-cover w-full h-full"
               />
-              <h2 className="absolute bottom-4 left-4 text-white text-[48px] font-semibold">
-                Fishes
-              </h2>
+              <h2 className="absolute bottom-4 left-4">Рыбки</h2>
             </div>
           </div>
         </div>

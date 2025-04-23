@@ -1,5 +1,5 @@
 import { Intro } from "./componets/Intro";
-import { Main } from "./componets/main/Main";
+import { Main } from "./componets/Main";
 
 function App() {
   return (
