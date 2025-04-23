@@ -1,14 +1,13 @@
-import { Main } from "./componets/main/Main"
-
+import { Intro } from "./componets/Intro";
+import { Main } from "./componets/main/Main";
 
 function App() {
-
-
   return (
     <>
-     <Main/>
+      <Main />
+      <Intro />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
